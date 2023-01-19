@@ -1,7 +1,7 @@
 <template>
     <div>
-        <nav class="navbar" id='navbar'>
-            <div class="nav-container" id='menu'>
+        <nav class="navbar">
+            <div class="nav-container">
                 <img class="logo" alt='logo' src= {Logo}/>
                 <a href="google.com">Product</a>
                 <a href="google.com">Features</a>

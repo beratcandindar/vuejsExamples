@@ -21,7 +21,7 @@ counterData.count++
 
 <style>
     body{
-        background-color: darkslategrey;
+        background-color: #1f2937;
 
     }
     .title{

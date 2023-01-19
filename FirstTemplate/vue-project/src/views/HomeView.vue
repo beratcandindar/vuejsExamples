@@ -1,15 +1,18 @@
 <template>
-  <h3> {{ counterData.title }}: {{ counterData.count }}</h3>
-  <div class="counter" :class="{'yellow' : oddOrEven ==='tektir'}">
-      <button @click="decreaseCounter(1)">-</button>
-      <span>{{ counterData.count }}</span>
-      <button @click="increaseCounter(1)">+</button>
+  <div class="container">
+    <h3> {{ counterData.title }}: {{ counterData.count }}</h3>
+    <div class="counter" :class="{'yellow' : oddOrEven ==='tektir'}">
+        <button @click="decreaseCounter(1)">-</button>
+        <span>{{ counterData.count }}</span>
+        <button @click="increaseCounter(1)">+</button>
+    </div>
+    <div>
+      <h3>Bu sayı {{ oddOrEven }}</h3>
+      <h3>Başlığı değiştir:</h3>
+      <input v-model="counterData.title" type="text">
+    </div>
   </div>
-  <div>
-    <h3>Bu sayı {{ oddOrEven }}</h3>
-  <h3>Başlığı değiştir:</h3>
-  <input v-model="counterData.title" type="text">
-  </div>
+  
 </template>
 
 <script setup>
@@ -52,5 +55,11 @@ function decreaseCounter(amount){
     }
     .counter.yellow{
       background-color: yellow;
+    }
+    .container{
+      width: 1400px;
+      height: 700px;
+      display: block;
+      position: relative;
     }
 </style>

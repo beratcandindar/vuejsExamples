@@ -13,21 +13,6 @@ const router = createRouter({
       path: '/modals',
       name: 'modals',
       component: () => import('../views/ModalsView.vue')
-    },
-    {
-      path: '/mainpage',
-      name: 'mainpage',
-      component: () => import('../views/NavbarView.vue')
-    },
-    {
-      path: '/zikirmatik',
-      name: 'zikirmatik',
-      component: () => import('../views/ZikirmatikView.vue')
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
     }
     
   ]

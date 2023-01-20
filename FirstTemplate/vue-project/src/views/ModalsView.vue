@@ -23,6 +23,7 @@ body{
     background-color: black;
 }
 .modal{
+    display: block;
     margin: 10px;
     width: 300px;
     background-color: beige;

@@ -41,7 +41,7 @@ function decreaseCounter(amount){
 
 <style>
     .counter{
-      display: inline-block ;
+      display: block ;
       width: 100%;
       text-align: center;
       padding: 20px;
@@ -57,9 +57,8 @@ function decreaseCounter(amount){
       background-color: yellow;
     }
     .container{
-      width: 1400px;
-      height: 700px;
+      
+      margin-top:69px;
       display: block;
-      position: relative;
     }
 </style>

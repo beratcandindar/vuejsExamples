@@ -2,8 +2,8 @@ body{
     background-color: #1f2937;
 }
 .bg_image{
-    display: flex;
-    z-index: 1;
+    display: relative;
+    z-index: 2;
     float: right;
     opacity: .3;
     margin-top: 9px;
@@ -11,16 +11,16 @@ body{
     height: 450px;
 }
 .full-page{
-    width: 1450px;
+    max-width: 1920px;
     position: relative;
-    height: 630px;
+    height: auto;
     margin: 0 auto;
     margin-top: 70px;
 }
 .left-page{
     display: inline-block;
-    width: 600px;
-    height: 700px;
+    width: 40%;
+    height: auto;
     margin-left: 20px;
 }
 .info-header{
@@ -28,7 +28,8 @@ body{
     position: relative;
     width: 330px;
     background-color: #111827;
-    height: 39px;
+    height: auto;
+    padding: 1px;
     margin-top: 150px;
     margin-bottom: 20px;
     border-radius: 50px;
@@ -67,13 +68,13 @@ body{
     color: #ccd1d7;
     font-family: 'Poppins', sans-serif;
 }
-.deneme{
-       margin-top: 20px;
-}
 hr{
     display: inline-block;
     width: 44%;
     margin: 6px;
+}
+.deneme{
+    margin-top: 30px;
 }
 .used-by{
     margin-top: 30px;
@@ -87,23 +88,27 @@ hr{
     margin-left: 12px;
   }
 .right-page{
-    width: 550px;
+    width: 40%;
     height: 550px;
     float: right;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
-    z-index: 2;
-    background-color: white;
-    margin-right: 80px;
-    border-radius: 15px;
+    z-index: 3;
+    background-image:  "../photos/dots.png";
 }
 .right-page-container{
-    width: 400px;
-    height: 510px;
+    background-color: white;
+    position: absolute;
+    width: 440px;
+    height: 500px;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
     margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
     margin-top: 60px;
-    display: block;
 }
 .right-page-title{
     color: #4b5563;
@@ -136,7 +141,35 @@ input{
     background-color: #4f46e5;
     color: white;
     padding: 7px;
-    width: 400px;
+    width: 90%;
     border-radius: 5px;
     border-style: none;
 }
+.label-box{
+    width: 95%;
+}
+@media screen and (max-width: 600px) {
+    .left-page {
+        width: 95%;
+        text-align: center;
+        position: relative;
+        margin: 0;
+    }
+    .left-page-info{
+        width: 97%;
+    }
+    .info-header{
+        margin: 10px;
+        margin: auto;
+    }
+    .right-page {
+        width: 100%;
+      }
+    .right-page-container{
+        position: relative;
+        width: 100%;
+    }
+    .bg_image{
+        display: none;
+    }
+  }

@@ -21,8 +21,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .navbar{
+    overflow: hidden;
 	position: fixed;
-    z-index: 3;
+    z-index: 5;
 	top: 0;
     width: 100%;
     padding: 0;
@@ -34,6 +35,7 @@ body{
     height: 69px;
     margin: 0 auto;
     background-color: #1f2937;
+    z-index: 1;
 }
 .login{
     width: auto;
@@ -51,3 +53,36 @@ body{
     vertical-align: center;
     background-color: #4b5563;
 }   
+@media screen and (max-width: 600px) {
+    .full-page{
+        width: 100%;
+    }
+    .nav-container {
+        position: fixed;
+        width: 100%;
+        padding: 0;
+    }
+    .navbar-toggler{
+        margin-right: 4%;
+        background-color: burlywood;
+        margin: 18px;
+    }
+    .nav-container a{
+        background-color: burlywood;
+        border-radius: 7px;
+        color: black;
+        text-align: center;
+        padding-right: 8px; 
+    }
+    .nav-container li{
+        background-color: #1f2937;
+        margin: -3px;
+        margin-left: 2px;
+    }
+    .nav-container ul{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+  }

@@ -1,7 +1,26 @@
 <script>
 import '../style/react.css';
 import "@fortawesome/vue-fontawesome";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+
+
+
+export default {
+    data() {
+        return {
+        shout: '',
+        };
+    },
+    methods: {
+    handleShout() {
+      const name = this.$refs.name.value;
+      const mail = this.$refs.mail.value;
+      const passw = this.$refs.passw.value;
+      this.shout = `${name.toUpperCase() + mail.toUpperCase() + passw.toUpperCase()}!!!`;
+    }
+  }
+}
+
+
 </script>
 
 <template>
@@ -21,17 +40,21 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
                 <div class="right-page">
                     <div class="right-page-container">
                         <p class="right-page-title">Sign in with</p>
-                        <a href="#"><i class="right-page-label"><fa :icon="['fab', 'facebook']"/></i></a>
-                        <a href="#"><i class=" right-page-label"><fa :icon="['fab', 'twitter']"/></i></a>
-                        <a href="#"><i class="right-page-label"><fa :icon="['fab', 'github']"/></i></a>
+                        <div class="label-box">
+                            <a href="https://www.facebook.com/"><i class="right-page-label"><fa :icon="['fab', 'facebook']"/></i></a>
+                            <a href="https://twitter.com/"><i class=" right-page-label"><fa :icon="['fab', 'twitter']"/></i></a>
+                            <a href="https://github.com/"><i class="right-page-label"><fa :icon="['fab', 'github']"/></i></a>
+                        </div>
                         <div class="deneme"><hr/>Or<hr/></div>
-                        <input type="name" class="form-control" placeholder="Full name"/>
-                        <input type="email" class="form-control" placeholder="Mobile number or email"/>
-                        <input type="password" class="form-control" placeholder="Password"/>
-                        <button type="submit" class="submit">Create your account</button>
+                        <input ref="name" class="form-control" placeholder="Full name"/>
+                        <input ref="mail" class="form-control" placeholder="Mobile number or email"/>
+                        <input ref="passw"  class="form-control" placeholder="Password"/>
+                        <button @click="handleShout()" type="submit" class="submit">Create your account {{ shout }}</button>
+                        
                     </div>
+                    <img class="bg_image" src="../photos/dots.png"/>
                 </div>
-                <img class="bg_image" src="../photos/dots.png"/>
+                
             </div>
         </div>
 </template>

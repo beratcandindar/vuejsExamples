@@ -165,11 +165,28 @@ input{
     .right-page {
         width: 100%;
       }
+    .right-page-label {
+        
+        padding-right: 12%;
+        padding-left: 12%;
+        margin: 2%;
+    }
     .right-page-container{
         position: relative;
         width: 100%;
     }
     .bg_image{
         display: none;
+    }
+    .label-box{
+        display: flex;
+        max-width: 100%;
+    }
+    .deneme{
+        display:inline-flex;
+        width: 100%;
+    }
+    hr{
+        margin-top: 3%;
     }
   }

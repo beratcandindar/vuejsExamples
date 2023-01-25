@@ -10,9 +10,9 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/modals',
-      name: 'modals',
-      component: () => import('../views/ModalsView.vue')
+      path: '/counter',
+      name: 'counter',
+      component: () => import('../views/CounterView.vue')
     }
     
   ]

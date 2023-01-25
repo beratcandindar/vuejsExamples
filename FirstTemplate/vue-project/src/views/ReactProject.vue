@@ -30,11 +30,16 @@ export default {
                     <div class="info-header">
                         <strong class="info-header-l">We're hiring</strong>
                         <p class="info-header-r">Visit our careers page </p>
-                        <i class="fa-solid fa-angle-up fa-rotate-90"></i>
+                        <fa class="fa-solid fa-rotate-90" icon="angle-up"/>
                     </div>
                     <strong class="left-page-title">Data to enrich your online business</strong>
                     <p class="left-page-info">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.</p>
                     <p class="used-by">Used by</p>
+                    <div class="icon-box">
+                        <a class="used-by-icon fa-2xl" href="https://slack.com"><fa :icon="['fab', 'slack']"/></a>
+                        <a class="used-by-icon fa-2xl" href="https://www.docker.com"><fa :icon="['fab', 'docker']"/></a>
+                        <a class="used-by-icon fa-2xl" href="https://www.amazon.com/"><fa :icon="['fab', 'amazon']"/></a>
+                    </div>
                 </div>
 
                 <div class="right-page">

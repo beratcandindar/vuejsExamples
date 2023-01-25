@@ -7,7 +7,7 @@ body{
     float: right;
     opacity: .3;
     margin-top: 9px;
-    width: 450px;
+    width: 80%;
     height: 450px;
 }
 .full-page{
@@ -30,7 +30,7 @@ body{
     background-color: #111827;
     height: auto;
     padding: 1px;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 50px;
 }
@@ -38,11 +38,11 @@ body{
     display: inline-block;
     margin: 6px;
     color: white;
-    padding-left: 130px;
+    padding-left: 120px;
 }
 .info-header-l{
     background-color: #6366f1;
-    color: #ccd1d7;
+    color: white;
     padding: 2px;
     padding-right: 13px;
     padding-left: 13px;
@@ -71,7 +71,7 @@ body{
 hr{
     display: inline-block;
     width: 44%;
-    margin: 6px;
+    margin: 1%;
 }
 .deneme{
     margin-top: 30px;
@@ -83,9 +83,21 @@ hr{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+.used-by-icon{
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-right: 6%;
+    margin-top: 3%;
+    display: inline-block;
+    color: white;
+    border: #a8acb3 .1em solid;
+    border-radius: 5px;
+}
 .fa-solid {
     color: white;
-    margin-left: 12px;
+    margin-left: 5px;
+    display: relative;
   }
 .right-page{
     width: 40%;
@@ -100,7 +112,7 @@ hr{
 .right-page-container{
     background-color: white;
     position: absolute;
-    width: 440px;
+    width: 80%;
     height: 500px;
     z-index: 1;
     bottom: 0;
@@ -118,16 +130,13 @@ hr{
 .right-page-label{
     width: auto;
     height: auto;
-    padding: 8px;
-    padding-left: 45px;
-    padding-right: 45px;
-    margin-left: 12px;
-    margin-right: 12px;
-    border-color: #a8acb3;
-    opacity: .8;
+    padding: 2.2%;
+    padding-left: 11.6%;
+    padding-right: 11.6%;
+    margin: 2%;
+    border: #a8acb3 .1em solid;
     border-radius: 5px;
-    border-style: solid;
-    border-width: .1em;
+    opacity: .8;
     margin-bottom: 20px;
 }
 .right-page-container i{
@@ -142,12 +151,15 @@ input{
     color: white;
     padding: 7px;
     width: 90%;
+    position: absolute;
+    margin: auto;
     border-radius: 5px;
     border-style: none;
 }
 .label-box{
-    width: 95%;
+    width: 100%;
 }
+
 @media screen and (max-width: 600px) {
     .left-page {
         width: 95%;
@@ -161,12 +173,12 @@ input{
     .info-header{
         margin: 10px;
         margin: auto;
+        margin-top: 10px;
     }
     .right-page {
         width: 100%;
       }
     .right-page-label {
-        
         padding-right: 12%;
         padding-left: 12%;
         margin: 2%;
@@ -179,7 +191,6 @@ input{
         display: none;
     }
     .label-box{
-        display: flex;
         max-width: 100%;
     }
     .deneme{
@@ -188,5 +199,10 @@ input{
     }
     hr{
         margin-top: 3%;
+    }
+    .icon-box{
+        position: relative;
+        width: 100%;
+        left: 4%;
     }
   }

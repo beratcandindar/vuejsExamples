@@ -4,7 +4,6 @@ import MainPage from '@/component/MainPage.vue'
 
 <template>
   <MainPage/>
-      
 </template>
 
 

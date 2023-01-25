@@ -7,16 +7,20 @@ import "@fortawesome/vue-fontawesome";
 export default {
     data() {
         return {
-        shout: '',
+        output: 'Create Your Account',
+        name: '',
+        mail: '',
+        passw: '',
         };
     },
     methods: {
-    handleShout() {
-      const name = this.$refs.name.value;
-      const mail = this.$refs.mail.value;
-      const passw = this.$refs.passw.value;
-      this.shout = `${name.toUpperCase() + mail.toUpperCase() + passw.toUpperCase()}!!!`;
-    }
+        addData(e) {
+            e.preventDefault()
+            this.name = this.$refs.name.value;
+            this.mail = this.$refs.mail.value;
+            this.passw = this.$refs.passw.value;
+            this.output = `Başarıyla kayıt oldunuz.`;
+        }
   }
 }
 
@@ -51,15 +55,15 @@ export default {
                             <a href="https://github.com/"><i class="right-page-label"><fa :icon="['fab', 'github']"/></i></a>
                         </div>
                         <div class="deneme"><hr/>Or<hr/></div>
-                        <input ref="name" class="form-control" placeholder="Full name"/>
-                        <input ref="mail" class="form-control" placeholder="Mobile number or email"/>
-                        <input ref="passw"  class="form-control" placeholder="Password"/>
-                        <button @click="handleShout()" type="submit" class="submit">Create your account {{ shout }}</button>
-                        
+                        <form v-on:submit="addData">
+                            <input ref="name" type="name" class="form-control" placeholder="Full name" required/>
+                            <input ref="mail" type="email"  class="form-control" placeholder="Mobile number or email" required/>
+                            <input ref="passw" type="password"  class="form-control" placeholder="Password" required/>
+                            <button  type="submit" class="submit">{{ output }}</button>
+                        </form>
                     </div>
                     <img class="bg_image" src="../photos/dots.png"/>
                 </div>
-                
             </div>
         </div>
 </template>

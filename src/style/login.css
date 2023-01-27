@@ -1,0 +1,56 @@
+
+.Login-box{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background-image: url("https://www.bootstrapdash.com/demo/star-admin-vue/preview/static/img/login_1.59304b6.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ; 
+    height: 100%;
+}
+.center{
+    width: 30%;
+    height: 450px;
+    left: 35%;
+    padding: 40px;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 5px;
+}
+.link{
+    vertical-align: center;
+    width: auto;
+    color: black;
+    font-size: 13px;
+    
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    text-decoration: none;
+}
+.link:hover{
+    color: blue;
+}
+#submit{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.log-in-google{
+    width: auto;
+    padding: 10px;
+    border: #a8acb3 .1em solid;
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    .login-box{
+        width: 100%;
+        margin-top: 0;
+    }
+    .center{
+        position: flex;
+        width: auto;
+        margin: 3%;
+        right: 0;
+        left: 0;
+    }
+}
